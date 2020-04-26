@@ -101,7 +101,7 @@ namespace SqlSugar
         {
             get
             {
-                return "mysqldump.exe  {0} -uroot -p > {1}  ";
+                return "pg_dump.exe -U postgres {0} > {1} ";
             }
         }
         protected override string CreateTableSql
